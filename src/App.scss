@@ -1,13 +1,22 @@
 .App {
   text-align: center;
-  background: grey;
+  background: black;
   height: 100vh;
+  color: white;
+
+}
+
+.app-header,
+.app-footer {
+
+  background: black;
+
 }
 
 .app-header {
 
-  background: white;
   padding: 1rem;
+  overflow: none;
 
 }
 
@@ -16,13 +25,175 @@
   position: absolute;
   bottom: 0;
   text-align: center;
-  background: white;
   width: 100%;
 
 }
 
 .profile {
 
-  height: 250px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  // position: relative;
+
+
+
+  .profile-image {
+
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    // top: 50%;
+    z-index: 1;
+    right: calc(45% - 125px);
+    border: 5px solid #999;
+    box-shadow: 0px 0px 10px #999;
+    filter: sepia(50%);
+    animation: roll-profile 1.5s ease 1;
+  }
+
+  .profile-bg {
+
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background: linear-gradient(0deg,
+        // black,
+        // #99279b,
+        // #00B3C1,
+        // #ffba30,
+        // rgb(240, 183, 11),
+        // orange,
+        rgb(221, 48, 48),
+        orange,
+        rgb(213, 192, 9),
+
+
+      );
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 50%;
+    // right: 50%;
+    left: calc(45% - 125px);
+    box-shadow: 0px 0px 10px rgba(255, 166, 0, 0.541);
+    filter: saturate(90%) blur(1px);
+    opacity: 100%;
+    animation: fade-in 1.5s ease 0s 1;
+  }
+
+  .profile-bg,
+  .profile-strip {
+
+    // bottom: 10px;
+
+  }
+
+
+  .profile-strip {
+
+    position: relative;
+    width: 100%;
+    background: black;
+    height: 10px;
+
+  }
+
+
+
+  #profile-strip-1 {
+
+    top: 10%;
+
+  }
+
+  #profile-strip-2 {
+
+    top: 20%;
+
+  }
+
+  #profile-strip-3 {
+
+    top: 30%;
+
+  }
+
+  #profile-strip-4 {
+
+    top: 40%;
+
+  }
+
+  #profile-strip-5 {
+
+    top: 50%;
+
+  }
+
+  #profile-strip-6 {
+
+    top: 60%;
+
+  }
+
+  #profile-strip-7 {
+
+    top: 70%;
+
+  }
+
+  #profile-strip-8 {
+
+    top: 80%;
+
+  }
+
+  #profile-strip-9 {
+
+    top: 90%;
+
+  }
+
+
+}
+
+
+@keyframes roll-profile {
+
+  0% {
+
+    right: calc(42% - 125px);
+    opacity: 0%;
+    rotate: 45deg;
+
+  }
+
+  100% {
+
+    right: calc(45% - 125px);
+    opacity: 100%;
+    rotate: 0deg;
+
+  }
+
+}
+
+@keyframes fade-in {
+
+  0% {
+
+    opacity: 0%;
+    rotate: -45deg;
+
+  }
+
+  100% {
+
+    opacity: 100%;
+
+  }
 
 }
