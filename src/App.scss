@@ -1,10 +1,32 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+
+  // overflow: hidden;
+
+}
+
 .App {
+
   text-align: center;
   background: black;
   height: 100vh;
   color: white;
+  // display: flex;
+  // flex-direction: column;
+  overflow-y: scroll;
+  gap: 10px;
+  scroll-behavior: smooth;
+  // scroll-snap-type: y mandatory;
 
 }
+
+
 
 .app-header,
 .app-footer {
@@ -31,8 +53,8 @@
 
 .app-footer {
 
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
   text-align: center;
   width: 100%;
 
@@ -48,7 +70,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  // position: relative;
+  position: relative;
 
 
 
@@ -59,7 +81,7 @@
     position: absolute;
     // top: 50%;
     z-index: 1;
-    right: calc(45% - 125px);
+    right: calc(25% - 125px);
     border: 5px solid #999;
     box-shadow: 0px 0px 10px #999;
     filter: sepia(50%);
@@ -88,7 +110,7 @@
     z-index: 0;
     border-radius: 50%;
     // right: 50%;
-    left: calc(45% - 125px);
+    left: calc(25% - 125px);
     box-shadow: 0px 0px 10px rgba(255, 166, 0, 0.541);
     filter: saturate(90%) blur(1px);
     opacity: 100%;
@@ -173,7 +195,10 @@
 
 .app-navbar {
 
-  width: 100%;
+  // width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   height: 2rem;
   background: linear-gradient(0deg,
       #111,
@@ -186,6 +211,10 @@
   padding: 0;
   border-radius: 10px;
   border: 1px solid silver;
+  margin: 0 1rem;
+  z-index: 1000;
+
+
 
   ul {
 
@@ -205,11 +234,59 @@
       border-right: 1px solid #666;
       padding: 1px 1%;
 
+
+
+      a {
+
+        color: white;
+        text-decoration: none;
+
+      }
+
+      a:hover {
+
+        color: red;
+
+      }
+
     }
 
   }
 
 }
+
+.app-section {
+
+  background: #111;
+  // background: linear-gradient(90deg,
+  //     rgba(50, 50, 50, .3),
+  //     #222,
+  //     rgba(50, 50, 50, .3),
+  //   );
+  // box-shadow: 0px 0px 5px #AAA;
+  height: 100vh;
+  margin: auto;
+  margin: 1rem;
+  text-align: left;
+  padding: 1rem;
+  scroll-snap-align: end;
+  scroll-margin-top: 2.5rem;
+  scroll-snap-margin-top: 2.5rem;
+  position: relative;
+  border-radius: 5px;
+  margin: 1rem 21%;
+  border: 1px solid silver;
+
+  h2 {
+
+    margin: 0;
+    text-shadow: 0px 0px 2px #AAA;
+
+  }
+
+}
+
+
 
 @keyframes roll-profile {
 
