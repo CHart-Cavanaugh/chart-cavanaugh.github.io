@@ -1,4 +1,5 @@
-import ProfileImage from './profile.png';
+import ProfileImage from './../../images/profile.png';
+import ProfileImage1 from './../../images/06_11_2024 (2).png'
 
 
 
