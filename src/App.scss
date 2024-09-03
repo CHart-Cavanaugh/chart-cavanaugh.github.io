@@ -336,8 +336,25 @@ body {
     height: 70%;
     // border: 1px solid #AAA;
     // border-bottom-width: 0px;
-    background: grey;
+    background: #222;
     border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .art-project-preview {
+
+      // width: 400px;
+      height: 80%;
+      border: 2px solid silver;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px red,
+        0px 0px 15px orange,
+        0px 0px 10px blue;
+      filter: saturate(100%);
+      object-fit: contain;
+
+    }
 
   }
 
@@ -355,12 +372,12 @@ body {
     .project-type-tabs {
 
       margin: 0;
-      background: grey;
+      background: #222;
       // height: 2rem;
       // padding: 1rem;
       // position: relative;
       display: flex;
-      gap: 1px;
+      // gap: 1px;
 
 
 
@@ -549,11 +566,46 @@ body {
         width: 100%;
         margin: 0 .5rem;
         border-radius: 5px;
+        display: flex;
+        justify-content: start;
+        // padding: .5rem;
+        // gap: 1rem;
+        overflow-x: scroll;
 
       }
 
+
+
     }
 
+    .projects-collection-area::-webkit-scrollbar {
+
+      width: 1px;
+      background: #888;
+      border-radius: 0px 0px 5px 5px;
+
+    }
+
+    .projects-collection-area::-webkit-scrollbar-thumb {
+
+      background: linear-gradient(180deg,
+          #BBB,
+          #888,
+          #BBB,
+        );
+      border-radius: 10px;
+      border: 1px solid #555;
+
+    }
+
+    .projects-collection-area::-webkit-scrollbar-track {
+
+      background-color: #111;
+      margin: 1px;
+      border-radius: 10px;
+      border: 1px solid #555;
+
+    }
 
 
     .project-type-projects.type-tab-0 {
@@ -590,6 +642,53 @@ body {
 
 }
 
+
+.project-thumbnail {
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 10px 0;
+  // background: red;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 1;
+
+
+  .thumbnail-image {
+
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background: grey;
+    border-radius: 10px;
+    border: 2px outset silver;
+
+  }
+
+  figcaption {
+
+    color: black;
+    position: absolute;
+    bottom: 5px;
+    // background: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: calc(50% - 1.5rem);
+    width: 3rem;
+    text-align: center;
+
+  }
+
+}
+
+.project-thumbnail.active-thumbnail {
+
+  background: rgba(0, 0, 255, 30%);
+
+}
 
 
 @keyframes roll-profile {

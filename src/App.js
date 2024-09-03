@@ -4,6 +4,10 @@ import AppFooter from './components/AppFooter/AppFooter';
 import AppSection from './components/AppSection/AppSection';
 import ProjectSelectionArea from './components/ProjectSelectionArea/ProjectSelectionArea';
 import NavBar from './components/NavBar/NavBar';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setSelection } from './app/slices/currentSelectionSlice';
 
 
 
@@ -95,6 +99,19 @@ const SECTION_3_TEXT_1 = (
 
 function App() {
 
+  let currentSelection = useSelector((state) => state.currentSelection.value)
+  let x = 0;
+
+
+
+  useEffect(() => {
+
+    console.log(currentSelection)
+
+  }, [currentSelection])
+
+
+
   return (
 
     <div className="App">
@@ -111,7 +128,12 @@ function App() {
         id="projects-section"
         sectionName={"Projects"}
       />
-      <AppSection key={"Section 3"} id="background-section" sectionName={"Background"} sectionText={SECTION_3_TEXT_1} />
+      <AppSection
+        key={"Section 3"}
+        id="background-section"
+        sectionName={"Background"}
+        sectionText={SECTION_3_TEXT_1}
+      />
       <AppFooter />
     </div>
 
