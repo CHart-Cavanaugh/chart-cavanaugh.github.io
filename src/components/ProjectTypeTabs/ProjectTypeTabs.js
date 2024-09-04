@@ -1,4 +1,13 @@
+import { useDispatch } from "react-redux";
+import { setTab } from "../../app/slices/currentTabSlice";
+import { setSelection } from "../../app/slices/currentSelectionSlice";
+
+
 function ProjectTypeTabs(props) {
+
+  let dispatch = useDispatch();
+
+
 
   return (
 
@@ -13,6 +22,11 @@ function ProjectTypeTabs(props) {
           document.getElementsByClassName("project-type-label")[3].className = "project-type-label tab-type-0";
 
           document.getElementsByClassName("project-type-projects")[0].className = "project-type-projects type-tab-1";
+
+
+
+          dispatch(setSelection(0));
+          dispatch(setTab(1));
 
         }}
       >
@@ -29,6 +43,11 @@ function ProjectTypeTabs(props) {
 
           document.getElementsByClassName("project-type-projects")[0].className = "project-type-projects type-tab-2";
 
+
+
+          dispatch(setSelection(0));
+          dispatch(setTab(2));
+
         }}
       >
         Audio
@@ -44,6 +63,11 @@ function ProjectTypeTabs(props) {
 
           document.getElementsByClassName("project-type-projects")[0].className = "project-type-projects type-tab-3";
 
+
+
+          dispatch(setSelection(0));
+          dispatch(setTab(3));
+
         }}
       >
         Websites
@@ -58,6 +82,11 @@ function ProjectTypeTabs(props) {
           document.getElementsByClassName("project-type-label")[3].className = "project-type-label tab-type-4";
 
           document.getElementsByClassName("project-type-projects")[0].className = "project-type-projects type-tab-4";
+
+
+
+          dispatch(setSelection(0));
+          dispatch(setTab(4));
 
         }}
       >

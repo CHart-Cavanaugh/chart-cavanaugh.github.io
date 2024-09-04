@@ -17,14 +17,40 @@ import { setSelection } from "../../app/slices/currentSelectionSlice";
 function ProjectTypeProjects() {
 
   let currentSelection = useSelector((state) => state.currentSelection.value);
+  let currentTab = useSelector((state) => state.currentTab.value);
+
   let artProjects = useSelector((state) => state.artProjects.value);
+  let audioProjects = useSelector((state) => state.audioProjects.value);
+  let websiteProjects = useSelector((state) => state.websiteProjects.value);
+  let gameProjects = useSelector((state) => state.gameProjects.value);
+
   let dispatch = useDispatch();
+
+
+  let getProjectThumbnails = (projects) => {
+
+    return projects.map(getProjectThumbnail);
+
+  };
+
+  let getProjectThumbnail = (someProject, index) => {
+
+    return (
+
+      <ProjectThumbnail
+        key={`project-thumbnail-${index + 1}`}
+        myImage={someProject._projectThumbnail}
+        myOrder={index + 1}
+      />
+
+    );
+
+  };
 
 
 
   useEffect(() => {
 
-    document.getElementsByClassName("project-thumbnail")[0].className = "project-thumbnail active-thumbnail";
     dispatch(setSelection(0));
 
   }, []);
@@ -33,14 +59,36 @@ function ProjectTypeProjects() {
 
   useEffect(() => {
 
-    document.getElementsByClassName("active-thumbnail")[0].className = "project-thumbnail";
-    document.getElementsByClassName("project-thumbnail")[currentSelection].className = "project-thumbnail active-thumbnail"
+    let previous_active = document.getElementsByClassName("active-thumbnail")[0]
+    let new_active = document.getElementsByClassName("project-thumbnail")[currentSelection]
+
+
+
+    if (previous_active && new_active) {
+
+      previous_active.className = "project-thumbnail";
+      new_active.className = "project-thumbnail active-thumbnail"
+
+    }
 
   }, [currentSelection])
 
 
 
+  useEffect(() => {
 
+    let new_active = document.getElementsByClassName("project-thumbnail")[0];
+
+
+
+    if (new_active) {
+
+
+      new_active.className = "project-thumbnail active-thumbnail";
+
+    }
+
+  }, [currentTab])
 
 
 
@@ -48,19 +96,15 @@ function ProjectTypeProjects() {
 
     <div className="project-type-projects type-tab-1">
       <div className="projects-collection-area">
-        {artProjects.map((thumbnail_image, index) => {
+        {
 
-          return (
+          currentTab === 1 ? getProjectThumbnails(artProjects) :
+            currentTab === 2 ? getProjectThumbnails(audioProjects) :
+              currentTab === 3 ? getProjectThumbnails(websiteProjects) :
+                currentTab === 4 ? getProjectThumbnails(gameProjects) :
+                  ''
 
-            <ProjectThumbnail
-              key={`project-thumbnail-${index + 1}`}
-              myImage={thumbnail_image}
-              myOrder={index + 1}
-            />
-
-          );
-
-        })}
+        }
       </div>
     </div>
 

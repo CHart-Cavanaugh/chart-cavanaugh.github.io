@@ -6,8 +6,6 @@ import ProjectSelectionArea from './components/ProjectSelectionArea/ProjectSelec
 import NavBar from './components/NavBar/NavBar';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { setSelection } from './app/slices/currentSelectionSlice';
 
 
 
@@ -97,18 +95,21 @@ const SECTION_3_TEXT_1 = (
 );
 
 
+
 function App() {
 
   let currentSelection = useSelector((state) => state.currentSelection.value)
+  let currentTab = useSelector((state) => state.currentTab.value)
   let x = 0;
 
 
 
   useEffect(() => {
 
-    console.log(currentSelection)
+    // console.log(currentSelection);
+    console.log(currentTab);
 
-  }, [currentSelection])
+  }, [currentSelection, currentTab])
 
 
 

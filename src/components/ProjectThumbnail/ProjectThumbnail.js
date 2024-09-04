@@ -10,9 +10,13 @@ function ProjectThumbnail(props) {
   return (
 
     <figure className="project-thumbnail" >
-      <img className="thumbnail-image" src={props.myImage} onClick={(event) => {
-        dispatch(setSelection(props.myOrder - 1));
-      }} />
+      <img
+        className="thumbnail-image"
+        src={props.myImage}
+        loading="lazy"
+        onClick={(event) => {
+          dispatch(setSelection(props.myOrder - 1));
+        }} />
       <figcaption>{props.myOrder}</figcaption>
     </figure>
 
