@@ -742,8 +742,8 @@ body {
 
   .thumbnail-image {
 
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     background: grey;
     border-radius: 10px;
@@ -762,6 +762,7 @@ body {
     left: calc(50% - 1.5rem);
     width: 3rem;
     text-align: center;
+    font-size: 1rem;
 
   }
 
