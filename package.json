@@ -2,7 +2,7 @@
   "name": "dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chart-cavanaugh.github.io/",
+  "homepage": "https://chart-cavanaugh.github.io",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.17.0",
