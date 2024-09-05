@@ -70,7 +70,7 @@ function ProjectTypeTabs(props) {
 
         }}
       >
-        Websites
+        {window.innerWidth < 768 ? "Sites" : "Websites"}
       </h3>
       <h3
         className="project-type-label tab-type-0"

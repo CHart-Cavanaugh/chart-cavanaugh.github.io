@@ -306,6 +306,8 @@ body {
 
 }
 
+
+
 #projects-section {
 
   height: calc(100vh - 3rem);
@@ -726,6 +728,7 @@ body {
 }
 
 
+
 .project-thumbnail {
 
   margin: 0;
@@ -775,6 +778,7 @@ body {
 }
 
 
+
 @keyframes roll-profile {
 
   0% {
@@ -809,5 +813,210 @@ body {
     opacity: 100%;
 
   }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+  .App {
+
+    width: 100%;
+
+  }
+
+  .app-section {
+
+    margin: 1rem;
+
+  }
+
+  .app-header {
+
+    padding: 0;
+
+  }
+
+  .app-navbar {
+
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .profile {
+
+
+    // background: red;
+    margin: 0;
+    width: 481px;
+    // height: 70%
+    margin: auto;
+
+    .profile-image,
+    .profile-bg {
+
+      width: 200px;
+      height: 200px;
+
+    }
+
+
+    .profile-image {
+
+      right: calc(55% - 200px);
+      // right: 15%;
+
+    }
+
+    .profile-bg {
+      left: calc(55% - 200px);
+    }
+
+  }
+
+  .projects-collection-area {
+
+    margin: 0;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .App {
+
+    overflow-x: hidden;
+
+  }
+
+  .profile {
+
+
+    // background: red;
+    margin: 0;
+    width: 80%;
+    height: 150px;
+    // height: 70%
+    margin: 1rem auto 0;
+
+    .profile-image,
+    .profile-bg {
+
+      width: 150px;
+      height: 150px;
+
+    }
+
+    .profile-image {
+
+      // right: calc(55% - 200px);
+      right: 0%;
+
+    }
+
+    .profile-bg {
+      left: calc(55% - 200px);
+      left: 0%;
+    }
+
+  }
+
+  .app-navbar {
+
+    justify-content: center;
+    margin: 0rem auto;
+    width: calc(100% - .25rem);
+
+    ul {
+
+      border: 0;
+      // width: 95%;
+      width: 95%;
+      margin: auto;
+      // background: red;
+      // margin: 0 .5rem;
+      text-align: center;
+      // padding: 0 .25rem;
+      display: flex;
+      justify-content: center;
+
+      li:nth-of-type(3) {
+        border: none;
+      }
+
+      li {
+
+        padding: 0 .25rem;
+
+      }
+
+    }
+
+  }
+
+  .app-section {
+
+    margin: .5rem .25rem;
+    padding: .5rem;
+
+    .section-text {
+
+      margin: 1rem;
+
+    }
+
+  }
+
+  .projects-area {
+
+    width: 100%;
+
+
+
+  }
+
+  .project-type-tabs {
+
+    font-size: 80%;
+
+  }
+
+  .projects-collection-area {
+
+    margin: 0 !important;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+
+  }
+
+  .project-thumbnail {
+
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .thumbnail-image {
+
+      width: 40px;
+      height: 40px;
+
+    }
+
+    figcaption {
+
+      bottom: calc(40% - 1.5rem) !important;
+      font-size: 3rem;
+
+    }
+
+  }
+
 
 }
