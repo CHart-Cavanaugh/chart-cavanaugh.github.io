@@ -57,7 +57,7 @@ function ProjectPreviewArea() {
         />
         <figcaption>
           <span>
-            <b>{"Project Link: "}</b>
+            <b>{"Project Link: "}</b><br />
           </span>
           <a
             href={websiteProjects[currentSelection]._projectPreview}
@@ -86,7 +86,7 @@ function ProjectPreviewArea() {
         />
         <figcaption>
           <span>
-            <b>{"Project Link: "}</b>
+            <b>{"Project Link: "}</b><br />
           </span>
           <a
             href={gameProjects[currentSelection]._projectPreview}

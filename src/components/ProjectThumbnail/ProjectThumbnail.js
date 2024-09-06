@@ -17,7 +17,7 @@ function ProjectThumbnail(props) {
         onClick={(event) => {
           dispatch(setSelection(props.myOrder - 1));
         }} />
-      {window.innerHeight < 768 ? "" : <figcaption>{props.myOrder}</figcaption>}
+      {window.innerWidth <= 768 ? "" : (<figcaption>{props.myOrder}</figcaption>)}
     </figure>
 
   );

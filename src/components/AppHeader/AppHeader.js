@@ -9,7 +9,11 @@ function AppHeader() {
 
     <header class="app-header">
       <Profile />
-      <h1>Christopher Hart-Cavanaugh</h1>
+      <h1>
+        <span>Christopher</span>
+        {window.innerWidth < 768 ? <br /> : " "}
+        <span>Hart-Cavanaugh</span>
+      </h1>
       <p>Artist | Musician | Developer | Projecteer</p>
     </header>
 
