@@ -15,10 +15,10 @@ import imageFile14 from './../../images/artProject14.png'
 import imageFile15 from './../../images/artProject15.png'
 import imageFile16 from './../../images/artProject16.png'
 import imageFile17 from './../../images/artProject17.png'
-// importimageFile18 from './../../images/artProject18.png'
-import imageFile19 from './../../images/artProject19.png'
-import imageFile20 from './../../images/artProject20.png'
-import imageFile21 from './../../images/artProject21.png'
+import imageFile18 from './../../images/artProject18.png'
+// import imageFile19 from './../../images/artProject19.png'
+// import imageFile20 from './../../images/artProject20.png'
+// import imageFile21 from './../../images/artProject21.png'
 
 
 
@@ -41,9 +41,9 @@ export const imageFiles = [
   imageFile15,
   imageFile16,
   imageFile17,
-  //imageFile18,
-  imageFile19,
-  imageFile20,
-  imageFile21,
+  imageFile18,
+  // imageFile19,
+  // imageFile20,
+  // imageFile21,
 
 ];

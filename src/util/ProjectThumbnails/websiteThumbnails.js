@@ -7,6 +7,6 @@ export const websiteThumbnails = [
 
   projectThumbnail1,
   projectThumbnail2,
-  projectThumbnail3,
+  // projectThumbnail3,
 
 ];

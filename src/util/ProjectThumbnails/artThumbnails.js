@@ -15,10 +15,10 @@ import projectThumbnail14 from './../../images/artProject14.png'
 import projectThumbnail15 from './../../images/artProject15.png'
 import projectThumbnail16 from './../../images/artProject16.png'
 import projectThumbnail17 from './../../images/artProject17.png'
-// impoprojectThumbnaille18 from './../../images/artProject18.png'
-import projectThumbnail19 from './../../images/artProject19.png'
-import projectThumbnail20 from './../../images/artProject20.png'
-import projectThumbnail21 from './../../images/artProject21.png'
+import projectThumbnail18 from './../../images/artProject18.png'
+// import projectThumbnail19 from './../../images/artProject19.png'
+// import projectThumbnail20 from './../../images/artProject20.png'
+// import projectThumbnail21 from './../../images/artProject21.png'
 
 
 
@@ -41,9 +41,9 @@ export const artThumbnails = [
   projectThumbnail15,
   projectThumbnail16,
   projectThumbnail17,
-  // projectThumbnail18,
-  projectThumbnail19,
-  projectThumbnail20,
-  projectThumbnail21,
+  projectThumbnail18,
+  // projectThumbnail19,
+  // projectThumbnail20,
+  // projectThumbnail21,
 
 ];
