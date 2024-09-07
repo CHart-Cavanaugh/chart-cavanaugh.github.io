@@ -1,7 +1,3 @@
-const DEFAULT_THUMBNAIL = '';
-
-
-
 export class ProjectPreview {
 
   static createProjectPreview(someThumbnail, somePreview) { return { _projectThumbnail: someThumbnail, _projectPreview: somePreview } }
