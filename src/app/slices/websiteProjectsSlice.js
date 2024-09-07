@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { urls } from "../../util/ProjectCollections/urls";
-import { websiteThumbnails } from "../../util/ProjectThumbnails/websiteThumbnails";
+import { siteUrls } from "../../util/ProjectCollections/siteUrls";
+import { siteThumbnails } from "../../util/ProjectThumbnails/siteThumbnails";
 import { ProjectPreview } from "../../util/ProjectPreview/ProjectPreview";
 
 
@@ -9,7 +9,7 @@ const initialState = {};
 
 
 
-initialState.value = ProjectPreview.getProjects(websiteThumbnails, urls);
+initialState.value = ProjectPreview.getProjects(siteThumbnails, siteUrls);
 
 
 

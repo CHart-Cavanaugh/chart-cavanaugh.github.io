@@ -3,7 +3,8 @@ import projectThumbnail2 from './../../images/websiteProject2.png';
 import projectThumbnail3 from './../../images/websiteProject3.png';
 
 
-export const websiteThumbnails = [
+
+export const siteThumbnails = [
 
   projectThumbnail1,
   projectThumbnail2,

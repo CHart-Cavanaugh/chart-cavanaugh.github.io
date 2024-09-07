@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { games } from "../../util/ProjectCollections/games";
+import { gameUrls } from "../../util/ProjectCollections/gameUrls";
 import { gameThumbnails } from "../../util/ProjectThumbnails/gameThumbnails";
 import { ProjectPreview } from "../../util/ProjectPreview/ProjectPreview";
 
@@ -9,7 +9,7 @@ const initialState = {};
 
 
 
-initialState.value = ProjectPreview.getProjects(gameThumbnails, games);
+initialState.value = ProjectPreview.getProjects(gameThumbnails, gameUrls);
 
 
 
