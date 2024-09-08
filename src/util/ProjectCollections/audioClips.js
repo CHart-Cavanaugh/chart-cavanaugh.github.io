@@ -4,6 +4,8 @@ import audioClip2 from './../../audio/audioProject2.mp3';
 
 
 export const audioClips = [
+
   audioClip1,
   audioClip2,
+
 ];

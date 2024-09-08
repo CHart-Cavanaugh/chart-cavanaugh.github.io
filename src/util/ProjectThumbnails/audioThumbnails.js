@@ -1,4 +1,4 @@
-import projectThumbnail1 from './../../images/defaultAudioThumbnail.png'
+import projectThumbnail1 from './../../images/defaultAudioThumbnail.png';
 
 
 

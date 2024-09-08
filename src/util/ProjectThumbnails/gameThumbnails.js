@@ -1,7 +1,7 @@
-import projectThumbnail1 from './../../images/gameProject1.png'
-import projectThumbnail2 from './../../images/gameProject2.png'
-import projectThumbnail3 from './../../images/gameProject3.png'
-import projectThumbnail4 from './../../images/gameProject4.png'
+import projectThumbnail1 from './../../images/gameProject1.png';
+import projectThumbnail2 from './../../images/gameProject2.png';
+import projectThumbnail3 from './../../images/gameProject3.png';
+import projectThumbnail4 from './../../images/gameProject4.png';
 
 
 
