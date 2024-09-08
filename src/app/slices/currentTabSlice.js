@@ -3,8 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = {
-  value: 1
-}
+
+  value: 1,
+
+};
 
 
 

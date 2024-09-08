@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { imageFiles } from "../../util/ProjectCollections/imageFiles";
 import { artThumbnails } from "../../util/ProjectThumbnails/artThumbnails";
+
 import { ProjectPreview } from "../../util/ProjectPreview/ProjectPreview";
 
 
@@ -20,7 +22,5 @@ export const artProjectsSlice = createSlice({
   reducers: {}
 
 });
-
-
 
 export default artProjectsSlice.reducer;

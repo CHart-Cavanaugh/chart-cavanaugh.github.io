@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { gameUrls } from "../../util/ProjectCollections/gameUrls";
 import { gameThumbnails } from "../../util/ProjectThumbnails/gameThumbnails";
+
 import { ProjectPreview } from "../../util/ProjectPreview/ProjectPreview";
 
 
@@ -20,7 +22,5 @@ export const gameProjectsSlice = createSlice({
   reducers: {}
 
 });
-
-
 
 export default gameProjectsSlice.reducer;
