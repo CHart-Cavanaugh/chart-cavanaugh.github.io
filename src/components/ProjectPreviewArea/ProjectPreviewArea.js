@@ -51,7 +51,6 @@ function ProjectPreviewArea() {
         className="project-preview website-project-preview"
       >
         <img
-
           alt="something"
           src={websiteProjects[currentSelection]._projectThumbnail}
         />
@@ -92,7 +91,12 @@ function ProjectPreviewArea() {
             href={gameProjects[currentSelection]._projectPreview}
             target='_blank'
           >
-            {gameProjects[currentSelection]._projectPreview.match(/[0-9a-z]+[-]upload/g) || gameProjects[currentSelection]._projectPreview.match(/[0-9a-z]+[-]demo/g)}
+            {
+
+              gameProjects[currentSelection]._projectPreview.match(/[0-9a-z]+[-]upload/g) ||
+              gameProjects[currentSelection]._projectPreview.match(/[0-9a-z]+[-]demo/g)
+
+            }
           </a>
         </figcaption>
       </figure>
@@ -102,15 +106,19 @@ function ProjectPreviewArea() {
   }
 
 
+
+
   return (
 
     <div className="project-preview-area">
       {
+
         currentTab === 1 ? getArtPreview(artProjects, currentSelection) :
           currentTab === 2 ? getAudioPreview(audioProjects, currentSelection) :
             currentTab === 3 ? getWebsitePreview(websiteProjects, currentSelection) :
               currentTab === 4 ? getGamePreview(gameProjects, currentSelection) :
                 ''
+
       }
     </div>
 

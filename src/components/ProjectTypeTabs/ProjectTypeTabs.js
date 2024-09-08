@@ -3,6 +3,7 @@ import { setTab } from "../../app/slices/currentTabSlice";
 import { setSelection } from "../../app/slices/currentSelectionSlice";
 
 
+
 function ProjectTypeTabs(props) {
 
   let dispatch = useDispatch();
@@ -70,7 +71,14 @@ function ProjectTypeTabs(props) {
 
         }}
       >
-        {window.innerWidth < 768 ? "Sites" : "Websites"}
+        {
+
+          window.innerWidth < 768 ?
+
+            "Sites" :
+            "Websites"
+
+        }
       </h3>
       <h3
         className="project-type-label tab-type-0"
@@ -97,5 +105,7 @@ function ProjectTypeTabs(props) {
   );
 
 }
+
+
 
 export default ProjectTypeTabs;

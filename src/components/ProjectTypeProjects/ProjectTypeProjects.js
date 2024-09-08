@@ -5,15 +5,6 @@ import { setSelection } from "../../app/slices/currentSelectionSlice";
 
 
 
-// let ThumbnailImages = [
-//   ThumbnailImage1,
-//   ThumbnailImage2,
-//   ThumbnailImage3,
-//   ThumbnailImage4,
-// ];
-
-
-
 function ProjectTypeProjects() {
 
   let currentSelection = useSelector((state) => state.currentSelection.value);
@@ -25,6 +16,7 @@ function ProjectTypeProjects() {
   let gameProjects = useSelector((state) => state.gameProjects.value);
 
   let dispatch = useDispatch();
+
 
 
   let getProjectThumbnails = (projects) => {
@@ -55,8 +47,6 @@ function ProjectTypeProjects() {
 
   }, []);
 
-
-
   useEffect(() => {
 
     let previous_active = document.getElementsByClassName("active-thumbnail")[0]
@@ -73,8 +63,6 @@ function ProjectTypeProjects() {
 
   }, [currentSelection])
 
-
-
   useEffect(() => {
 
     let new_active = document.getElementsByClassName("project-thumbnail")[0];
@@ -82,7 +70,6 @@ function ProjectTypeProjects() {
 
 
     if (new_active) {
-
 
       new_active.className = "project-thumbnail active-thumbnail";
 
@@ -111,18 +98,6 @@ function ProjectTypeProjects() {
   );
 
 }
-
-
-
-// for (let i = 0; i < 2; i++) {
-
-//   ThumbnailImages = [
-//     ...ThumbnailImages,
-//     ...ThumbnailImages,
-//   ]
-
-// }
-
 
 
 

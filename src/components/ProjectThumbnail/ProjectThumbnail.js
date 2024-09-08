@@ -7,6 +7,8 @@ function ProjectThumbnail(props) {
 
   let dispatch = useDispatch();
 
+
+
   return (
 
     <figure className="project-thumbnail" >
@@ -15,13 +17,24 @@ function ProjectThumbnail(props) {
         src={props.myImage}
         loading="lazy"
         onClick={(event) => {
+
           dispatch(setSelection(props.myOrder - 1));
+
         }} />
-      {window.innerWidth <= 768 ? "" : (<figcaption>{props.myOrder}</figcaption>)}
+      {
+
+        window.innerWidth <= 768 ?
+
+          "" :
+          (<figcaption>{props.myOrder}</figcaption>)
+
+      }
     </figure>
 
   );
 
 }
+
+
 
 export default ProjectThumbnail;
