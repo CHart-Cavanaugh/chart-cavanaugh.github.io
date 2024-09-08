@@ -5,5 +5,6 @@ export const siteUrls = [
   // 'https://chart-cavanaugh.github.io/MarkdownPreviewer/',
   'https://chart-cavanaugh.github.io/DrumMachine/',
   'https://chart-cavanaugh.github.io/AlanTuring_Tribute/',
+  'https://chart-cavanaugh.github.io/Gamer_Survey/',
 
 ];
