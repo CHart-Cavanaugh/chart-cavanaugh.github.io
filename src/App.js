@@ -2,10 +2,9 @@ import './App.scss';
 import AppHeader from './components/AppHeader/AppHeader';
 import AppFooter from './components/AppFooter/AppFooter';
 import AppSection from './components/AppSection/AppSection';
-import ProjectSelectionArea from './components/ProjectSelectionArea/ProjectSelectionArea';
 import NavBar from './components/NavBar/NavBar';
-import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
+// import { useSelector } from 'react-redux';
+// import { useEffect } from 'react';
 
 
 
@@ -98,18 +97,8 @@ const SECTION_3_TEXT_1 = (
 
 function App() {
 
-  let currentSelection = useSelector((state) => state.currentSelection.value)
-  let currentTab = useSelector((state) => state.currentTab.value)
-  let x = 0;
-
-
-
-  useEffect(() => {
-
-    // console.log(currentSelection);
-    console.log(currentTab);
-
-  }, [currentSelection, currentTab])
+  // let currentSelection = useSelector((state) => state.currentSelection.value);
+  // let currentTab = useSelector((state) => state.currentTab.value);
 
 
 
