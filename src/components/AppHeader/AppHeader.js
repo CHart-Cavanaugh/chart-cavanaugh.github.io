@@ -21,6 +21,7 @@ function AppHeader() {
         <span>Hart-Cavanaugh</span>
       </h1>
       <p>Artist | Musician | Developer | Projecteer</p>
+      <p><i className="fa fa-envelope"></i> : christopher.hartcava@gmail.com</p>
     </header>
 
   );
