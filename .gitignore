@@ -6,7 +6,7 @@
 .pnp.js
 
 # Image Files
-.png
+*.png
 
 # testing
 /coverage
