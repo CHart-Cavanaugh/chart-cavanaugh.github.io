@@ -25,9 +25,9 @@ const SECTION_1_TEXT_0 = ( // ORIGINAL TEXT
   ``
 
 );
-const SECTION_1_TEXT_1 = ( //AI IMPROVED TEXT 1/2
+const SECTION_1_TEXT_1 = (
 
-  `Welcome! My name is Christopher Hart-Cavanaugh. I am lifelong learner, 
+  `Welcome! My name is Christopher Hart-Cavanaugh. I am a lifelong learner, 
   dedicated to enhancing my problem-solving skills in various situations. 
   My goal is to deepen my understanding of the tools available to us as 
   human beings and to explore how these tools can be applied effectively 
