@@ -18,7 +18,11 @@ import projectThumbnail17 from './../../images/artProject17.png';
 import projectThumbnail18 from './../../images/artProject18.png';
 import projectThumbnail19 from './../../images/artProject19.png';
 import projectThumbnail20 from './../../images/artProject20.png';
-// import projectThumbnail21 from './../../images/artProject21.png';
+import projectThumbnail21 from './../../images/artProject21.png';
+import projectThumbnail22 from './../../images/artProject22.PNG';
+import projectThumbnail23 from './../../images/artProject23.png';
+import projectThumbnail24 from './../../images/artProject24.png';
+import projectThumbnail25 from './../../images/artProject25.png';
 
 
 
@@ -44,6 +48,10 @@ export const artThumbnails = [
   projectThumbnail18,
   projectThumbnail19,
   projectThumbnail20,
-  // projectThumbnail21,
+  projectThumbnail21,
+  projectThumbnail22,
+  projectThumbnail23,
+  projectThumbnail24,
+  projectThumbnail25,
 
 ];
