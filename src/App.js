@@ -31,8 +31,8 @@ const SECTION_1_TEXT_1 = ( //AI IMPROVED TEXT 1/2
   dedicated to enhancing my problem-solving skills in various situations. 
   My goal is to deepen my understanding of the tools available to us as 
   human beings and to explore how these tools can be applied effectively 
-  to solve challenges. I work diligently on projects in the hopes that I 
-  can make a living out of providing potentially useful products and 
+  to solve challenges. I work diligently on projects in the hopes of 
+  making a living out of providing potentially useful products and 
   services to anyone who could benefit from them. I'm driven by a passion 
   to ensure that the total sum of my decisions and actions serve as a 
   positive inspiration to others.`
