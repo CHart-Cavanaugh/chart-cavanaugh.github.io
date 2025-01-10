@@ -27,16 +27,15 @@ const SECTION_1_TEXT_0 = ( // ORIGINAL TEXT
 );
 const SECTION_1_TEXT_1 = ( //AI IMPROVED TEXT 1/2
 
-  `Welcome! My name is Christopher Hart-Cavanaugh. I am a student and a 
-  lifelong learner, dedicated to enhancing my problem-solving skills in 
-  various situations. My goal is to deepen my understanding of the tools 
-  available to us as human beings and to explore how these tools can be 
-  applied effectively to solve challenges. I am committed to continuously 
-  improving my abilities, striving to use these tools creatively and 
-  thoughtfully. I have a passion for building unique and innovative 
-  solutions, aiming to contribute positively to the world. As a teacher 
-  and a leader, I am driven by the desire to take action and inspire others, 
-  working together to create a better future.`
+  `Welcome! My name is Christopher Hart-Cavanaugh. I am lifelong learner, 
+  dedicated to enhancing my problem-solving skills in various situations. 
+  My goal is to deepen my understanding of the tools available to us as 
+  human beings and to explore how these tools can be applied effectively 
+  to solve challenges. I work diligently on projects in the hopes that I 
+  can make a living out of providing potentially useful products and 
+  services to anyone who could benefit from them. I'm driven by a passion 
+  to ensure that the total sum of my decisions and actions serve as a 
+  positive inspiration to others.`
 
 );
 const SECTION_2_TEXT = (
