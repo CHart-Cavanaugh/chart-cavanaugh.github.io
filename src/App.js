@@ -3,8 +3,12 @@ import AppHeader from './components/AppHeader/AppHeader';
 import AppFooter from './components/AppFooter/AppFooter';
 import AppSection from './components/AppSection/AppSection';
 import NavBar from './components/NavBar/NavBar';
-// import { useSelector } from 'react-redux';
-// import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
+
+
+
 
 
 
@@ -91,13 +95,35 @@ const SECTION_3_TEXT_1 = (
   every day.`
 
 );
+const INITIAL_VOLUME = .75;
+
+
+
+function resetVolumeToInitial() {
+
+  document.querySelector(".audio-project-preview").volume = INITIAL_VOLUME;
+
+}
 
 
 
 function App() {
 
   // let currentSelection = useSelector((state) => state.currentSelection.value);
-  // let currentTab = useSelector((state) => state.currentTab.value);
+  let currentTab = useSelector((state) => state.currentTab.value);
+
+
+
+
+  useEffect(() => {
+
+    if (currentTab === 2) {
+
+      resetVolumeToInitial();
+
+    }
+
+  }, [currentTab]);
 
 
 
