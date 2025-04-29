@@ -15,14 +15,16 @@ import imageFile14 from './../../images/artProject14.png'
 import imageFile15 from './../../images/artProject15.png'
 import imageFile16 from './../../images/artProject16.png'
 import imageFile17 from './../../images/artProject17.png'
-import imageFile18 from './../../images/artProject18.PNG'
-import imageFile19 from './../../images/artProject19.png'
+import imageFile18 from './../../images/artProject18.png'
+import imageFile19 from './../../images/artProject19.PNG'
 import imageFile20 from './../../images/artProject20.png'
 import imageFile21 from './../../images/artProject21.png'
-import imageFile22 from './../../images/artProject22.PNG'
+import imageFile22 from './../../images/artProject22.png'
 import imageFile23 from './../../images/artProject23.png'
-import imageFile24 from './../../images/artProject24.png'
+import imageFile24 from './../../images/artProject24.PNG'
 import imageFile25 from './../../images/artProject25.png'
+import imageFile26 from './../../images/artProject26.png'
+import imageFile27 from './../../images/artProject27.png'
 
 
 
@@ -53,5 +55,7 @@ export const imageFiles = [
   imageFile23,
   imageFile24,
   imageFile25,
+  imageFile26,
+  imageFile27,
 
 ];

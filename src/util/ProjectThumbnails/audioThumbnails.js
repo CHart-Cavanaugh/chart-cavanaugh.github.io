@@ -8,5 +8,6 @@ export const audioThumbnails = [
   projectThumbnail1,
   projectThumbnail1,
   projectThumbnail1,
+  // projectThumbnail1,
 
 ];
