@@ -34,7 +34,7 @@ function ProjectPreviewArea() {
       <audio
         className="project-preview audio-project-preview"
         src={audioProjects[currentSelection]._projectPreview}
-        autoPlay
+        // autoPlay
         controls
         controlsList='nodownload'
       >
